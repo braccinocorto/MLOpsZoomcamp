@@ -1,3 +1,3 @@
 # MLOpsZoomcamp
 
-This folder conains the submissions of the MLOPSzoomcamp homeworks.
+This folder contains the submissions of the 2023 MLOpsZoomcamp homeworks.
