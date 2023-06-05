@@ -1,0 +1,43 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2023-06-05T16:11:03.402068",
+    "startedAt": "2023-06-05T16:11:02.592062",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "mlopszoomcamp",
+        "--wandb_entity",
+        "braccinocorto",
+        "--data_artifact",
+        "braccinocorto/mlopszoomcamp/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/Users/giordano/Documents/Personal/_CORSI/MLOPSZoomcamp/_homeworks/02wandb/sweep.py",
+    "codePath": "sweep.py",
+    "host": "MacBook-Pro-di-Giordano.local",
+    "username": "giordano",
+    "executable": "/Users/giordano/opt/anaconda3/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2500,
+        "min": 2500,
+        "max": 2500
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500,
+            "min": 2500,
+            "max": 2500
+        }
+    ],
+    "disk": {
+        "total": 465.7246513366699,
+        "used": 14.357742309570312
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

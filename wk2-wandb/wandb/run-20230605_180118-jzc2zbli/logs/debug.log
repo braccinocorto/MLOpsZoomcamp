@@ -1,0 +1,14 @@
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Configure stats pid to 19046
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Loading settings from /Users/giordano/.config/wandb/settings
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Loading settings from /Users/giordano/Documents/Personal/_CORSI/MLOPSZoomcamp/_homeworks/02wandb/wandb/settings
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-05 18:01:18,758 INFO    MainThread:19046 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/Users/giordano/Documents/Personal/_CORSI/MLOPSZoomcamp/_homeworks/02wandb/train.py'}
+2023-06-05 18:01:18,759 INFO    MainThread:19046 [wandb_init.py:_log_setup():507] Logging user logs to /Users/giordano/Documents/Personal/_CORSI/MLOPSZoomcamp/_homeworks/02wandb/wandb/run-20230605_180118-jzc2zbli/logs/debug.log
+2023-06-05 18:01:18,759 INFO    MainThread:19046 [wandb_init.py:_log_setup():508] Logging internal logs to /Users/giordano/Documents/Personal/_CORSI/MLOPSZoomcamp/_homeworks/02wandb/wandb/run-20230605_180118-jzc2zbli/logs/debug-internal.log
+2023-06-05 18:01:18,759 INFO    MainThread:19046 [wandb_init.py:init():547] calling init triggers
+2023-06-05 18:01:18,759 INFO    MainThread:19046 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-05 18:01:18,759 INFO    MainThread:19046 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-05 18:01:34,184 WARNING MsgRouterThr:19046 [router.py:message_loop():77] message_loop has been closed
