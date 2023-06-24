@@ -11,7 +11,7 @@ import xgboost as xgb
 from prefect import flow, task
 from prefect.artifacts import create_markdown_artifact
 from datetime import date
-
+from prefect_email import EmailServerCredentials, email_send_message
 
 @task(retries=3, retry_delay_seconds=2, name="Read taxi data")
 def read_data(filename: str) -> pd.DataFrame:
@@ -93,7 +93,7 @@ def train_best_model(
         booster = xgb.train(
             params=best_params,
             dtrain=train,
-            num_boost_round=100,
+            num_boost_round=10,
             evals=[(valid, "validation")],
             early_stopping_rounds=20,
         )
@@ -129,6 +129,18 @@ def train_best_model(
 
     return None
 
+@flow
+def example_email_send_message_flow(email_addresses: List[str]):
+    email_server_credentials = EmailServerCredentials.load("emailblock")
+    for email_address in email_addresses:
+        subject = email_send_message.with_options(name=f"email {email_address}").submit(
+            email_server_credentials=email_server_credentials,
+            subject="Example Flow Notification using Gmail",
+            msg="This proves email_send_message works!",
+            email_to=email_address,
+        )
+
+
 
 @flow
 def main_flow(
@@ -150,7 +162,7 @@ def main_flow(
 
     # Train
     train_best_model(X_train, X_val, y_train, y_val, dv)
-
+    example_email_send_message_flow(["braccinocorto@gmail.com"])  
 
 if __name__ == "__main__":
     main_flow()
